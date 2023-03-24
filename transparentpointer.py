@@ -14,12 +14,11 @@ def main(page):
                 ),
                 ft.TransparentPointer(ft.Container(
                     ft.ElevatedButton("Test button"),
-                    padding=50
+                    padding=50,
+                    on_click=lambda _: print('click!')
                 )),
             ],
             expand=True,
-        )
-    )
-
+    ))
 
 ft.app(target=main)

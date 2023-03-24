@@ -1,6 +1,6 @@
 from typing import Dict
 
-import flet
+import flet as ft
 from flet import (
     Column,
     ElevatedButton,
@@ -71,4 +71,4 @@ def main(page: Page):
     )
 
 
-flet.app(target=main, upload_dir="uploads")
+ft.app(target=main, view=ft.WEB_BROWSER, upload_dir="uploads")

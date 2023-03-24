@@ -1,6 +1,7 @@
 import flet as ft
 
 def main(page: ft.Page):
+
     def pick_files_result(e: ft.FilePickerResultEvent):
         selected_files.value = (
             ", ".join(map(lambda f: f.name, e.files)) if e.files else "Cancelled!"

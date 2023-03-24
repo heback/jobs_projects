@@ -52,6 +52,12 @@ def main(page: Page):
                                 bgcolor=colors.CYAN,
                                 border_radius=3,
                             ),
+                            content_when_dragging=Container(
+                                width=50,
+                                height=50,
+                                bgcolor=colors.YELLOW,
+                                border_radius=5,
+                            ),
                         ),
                         Draggable(
                             group="color",
